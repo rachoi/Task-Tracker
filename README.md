@@ -11,4 +11,4 @@ COMPLETED:\
 Create user\
 Login for a user\
 Create a task and track (can pause and continue)\
-Display all tasks for a given user\
+Display all tasks for a given user
