@@ -1,7 +1,7 @@
 # Task-Tracker
 
-TO BE IMPLEMENTED:__
-Showing progress of elapsed time for task being tracked__
+TO BE IMPLEMENTED:\
+Showing progress of elapsed time for task being tracked\
 Deleteing tasks from completed tasks list__
 Modifying tasks that have been completed__
 Ability to continue a completed task__
