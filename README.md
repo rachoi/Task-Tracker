@@ -10,5 +10,5 @@ List for a specific task (start and stop at one time, continue and stop another,
 COMPLETED:\
 Create user\
 Login for a user\
-Create a task and track (can pause and continue) and add it to the completed task list for a given user\
+Create a task and track (can pause and continue) and add it to the completed task list for the logged in user\
 Display all tasks for a given user
