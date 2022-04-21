@@ -164,7 +164,8 @@ app.post('/add', checkAuthenticated, async function(req, res) {
             name: req.body.name,
             description: req.body.description,
             elapsedTime: req.body.elapsedTime,
-            date: req.body.date
+            startTime: req.body.startTime,
+            endTime: req.body.endTime
         }
         completedTasks.push(task);
 
