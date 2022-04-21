@@ -20,7 +20,7 @@ Login and register pages\
 Dashboard page after you log in\
 ![alt text](https://i.ibb.co/TR6DdBc/Screen-Shot-2022-04-21-at-4-13-18-PM.png)
 Clicking the + symbol will allow you to set up task tracking\
-![alt text](https://i.ibb.co/jGWzm8p/Screen-Shot-2022-04-21-at-4-14-10-PM.png
+![alt text](https://i.ibb.co/jGWzm8p/Screen-Shot-2022-04-21-at-4-14-10-PM.png)
 Begin tracking will lead to a live timer\
 ![alt text](https://i.ibb.co/rt4333g/Screen-Shot-2022-04-21-at-4-14-27-PM.png)
 Stopping a task will give you the following options\
