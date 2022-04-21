@@ -25,7 +25,7 @@ Begin tracking will lead to a live timer\
 ![alt text](https://i.ibb.co/rt4333g/Screen-Shot-2022-04-21-at-4-14-27-PM.png)
 Stopping a task will give you the following options\
 ![alt text](https://i.ibb.co/PW4XCRw/Screen-Shot-2022-04-21-at-4-14-33-PM.png)
-Resuming a task will continue the timer, reset will set the timer back to 0, submit will finish the task tracking
+Resuming a task will continue the timer, reset will set the timer back to 0, submit will finish the task tracking\
 ![alt text](https://i.ibb.co/0Bm4ygV/Screen-Shot-2022-04-21-at-4-14-50-PM.png)
-After submission, overlay will disappear and task will be added to completed task list
+After submission, overlay will disappear and task will be added to completed task list\
 ![alt text](https://i.ibb.co/rQtffm8/Screen-Shot-2022-04-21-at-4-14-58-PM.png
