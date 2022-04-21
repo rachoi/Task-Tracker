@@ -7,6 +7,7 @@ import Box from '@mui/material/Box';
 import CloseIcon from '@mui/icons-material/Close';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
+import StopWatch from './StopWatch';
 
 
 
@@ -18,15 +19,12 @@ const url = "http://localhost:5000";
 
 export default function SimpleBackdrop() {
   const [open, setOpen] = React.useState(false);
-  const [taskState, setTaskState] = React.useState(false); //false means not started, true means started
+  // const [taskState, setTaskState] = React.useState(false); //false means not started, true means started
   const [taskName, setTaskName] = React.useState("");
   const [taskDesc, setTaskDesc] = React.useState("");
   const [error, setError] = React.useState("");
-  const [totalSeconds, setTotalSeconds] = React.useState(0); //total seconds elapsed for a given task
+  // const [totalSeconds, setTotalSeconds] = React.useState(0); //total seconds elapsed for a given task
 
-
-  const [startTime, setStartTime] = React.useState("");
-  const [endTime, setEndTime] = React.useState("");
 
   const onChangeTaskName = e => {
     e.preventDefault();
@@ -44,9 +42,8 @@ export default function SimpleBackdrop() {
       setError("");
       setTaskName("");
       setTaskDesc("");
-      setStartTime("");
-      setEndTime("");
-      setTotalSeconds(0);
+
+      // setTotalSeconds(0);
   }
   //closing menu
   const handleClose = () => {
@@ -58,32 +55,9 @@ export default function SimpleBackdrop() {
     setOpen(!open);
   };
 
-  const startTrack = (e) => {
-    if(taskName.length === 0) {
-        setError("Required to put a name for the task");
-    }
-    else {
-        setTaskState(true);
-        let start = new Date().getTime();;
-        setStartTime(start);
-    }
-
-  }
-
-  const stopTrack = (e) => {
-    setTaskState(false);
-    let end = new Date().getTime();;
-    const seconds = (end-startTime)/1000;
-    const cur = totalSeconds + seconds; //adding total (so we can pause and continue for different times)
-    setTotalSeconds(cur);
-
-    const diff = new Date(seconds * 1000).toISOString().substr(11, 8); //hh:mm:ss
-    console.log("Current elapsed: " + diff);
-    console.log("Total: " + cur);
-    setEndTime(end);
-  }
 //reset values after adding
 
+  /*
   const addTask = (e) => {
     var today = new Date();
     var dd = String(today.getDate()).padStart(2, '0');
@@ -113,6 +87,7 @@ export default function SimpleBackdrop() {
       console.log(error);
     });
   }
+  */
 
   return (
     <div>
@@ -129,7 +104,7 @@ export default function SimpleBackdrop() {
 
             <div style={{display: "flex", alignItems: "center", flexDirection:"column"}}> 
                 <Typography component="h1" variant="h5" sx={{color: "black"}}>
-                    Create task
+                   Track task
                 </Typography>
                 <Typography component="h1" variant="h5" sx={{color: "red"}}>
                     {error}
@@ -159,7 +134,7 @@ export default function SimpleBackdrop() {
                     value={taskDesc}
                     onChange={onChangeTaskDesc}
                     />
-                    {taskState ?  
+                    {/* {taskState ?  
                         <div style={{display: "flex", justifyContent:"flex-end"}}>
                             <Button
                                 variant="contained"
@@ -189,7 +164,9 @@ export default function SimpleBackdrop() {
                             </Button> 
                         </div>
                         
-                    }
+                    } */}
+                    <StopWatch taskName={taskName} taskDesc={taskDesc}/>
+
                 </Box>
             </div>
         </div>

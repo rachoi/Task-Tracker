@@ -42,11 +42,6 @@ function ResponsiveDrawer(props) {
       
     },[]);
 
-
-  const handleSubmit = e => { 
-
-  }    
-  
   return (
       <div>
           <AppBar isLoggedIn={true}/> 
