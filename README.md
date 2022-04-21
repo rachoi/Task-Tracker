@@ -28,4 +28,4 @@ Stopping a task will give you the following options\
 Resuming a task will continue the timer, reset will set the timer back to 0, submit will finish the task tracking\
 ![alt text](https://i.ibb.co/0Bm4ygV/Screen-Shot-2022-04-21-at-4-14-50-PM.png)
 After submission, overlay will disappear and task will be added to completed task list\
-![alt text](https://i.ibb.co/rQtffm8/Screen-Shot-2022-04-21-at-4-14-58-PM.png
+![alt text](https://i.ibb.co/rQtffm8/Screen-Shot-2022-04-21-at-4-14-58-PM.png)
